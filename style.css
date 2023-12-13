@@ -1,0 +1,24 @@
+body{
+    background-color: #cbdced; 
+}
+.inputformSection{
+    background-color: #cbdced; 
+}
+.myFormLabel {
+    margin-top: 4rem;
+    
+}
+.myForm {
+    width: 18rem; !important
+    background-color: #cbdced; 
+}
+@media screen and (min-width: 319px) and (max-width: 380px){
+    .containerMy{
+        padding: 1rem; !important
+    }
+    .containerMy>h4,p,h5{
+      
+        font-size: 0.8rem; !important
+    }
+    
+}
