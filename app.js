@@ -1,6 +1,6 @@
 
 
-window.weatherChacking = function () {
+window.weatherChecking = function () {
     let cityName = document.querySelector("#formGroupExampleInput").value;
 
     let API_Key = '9cbee56634f1427788f8b341807611fa';
