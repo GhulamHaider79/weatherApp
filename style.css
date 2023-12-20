@@ -1,17 +1,55 @@
 body{
     background-color: #cbdced; 
 }
+.my-nav{
+    background-color: #cbdced; !important
+}
+.my-nav>nav{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.my-nav>nav>h5{
+    color: #6d6c6c;
+ 
+}
+.my-nav>nav>h5:hover{
+    color: rgb(245, 141, 224);
+}
+.my-nav>nav>ul{
+    text-decoration: none;
+    list-style: none;
+}
+.my-nav>nav>ul>li>button:hover{
+    color: aqua;
+}
 .inputformSection{
     background-color: #cbdced; 
 }
-.myFormLabel {
+.formInput{
+    display: flex;
     margin-top: 4rem;
+    gap: .5rem;
+    align-items: center;
+}
+.myFormLabel {
+    
+    /* margin-top: 4rem; */
     
 }
 .myForm {
     width: 18rem; !important
     background-color: #cbdced; 
 }
+.mybtn{
+    width: 35px;
+    border: none;
+    height: 35px;
+    border-radius: 50%;
+    color: brown;
+    font-size: 15px;
+}
+
 @media screen and (min-width: 319px) and (max-width: 380px){
     .containerMy{
         padding: 1rem; !important

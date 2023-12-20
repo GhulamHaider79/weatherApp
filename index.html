@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Checking App</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="./bootstrap.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
 
-    <section class="">
-        <nav class="navbar  bg-body-tertiary">
-            <div class="container-fluid justify-content-center">
-              <a class="navbar-brand" href="#">Weather Checking App </a>
-            </div>
-          </nav>
+    <section class="my-nav">
+        <nav>
+          <h5><a class="navbar-brand" href="#">Weather Pro </a></h5>
+          <ul>
+            <li>
+              <button type="button" class="btn btn-secondary">Subscribe</button>
+            </li>
+          </ul>
+        </nav>
     </section>
 
     <section class="inputformSection d-flex  justify-content-center container ">
         <div class="mb-3">
-            <form onsubmit="weatherChecking(); return false">
-                <label for="formGroupExampleInput" class="form-label myFormLabel">Search Your City</label>
-            <input type="text" class="form-control myForm" id="formGroupExampleInput" placeholder="Karachi">
-            <button type="submit" class="btn btn-info mt-1">Get Weather</button>
+            <form onsubmit="weatherChecking(); return false" class="formInput">
+            <!--<label for="formGroupExampleInput" class="form-label myFormLabel">Search Your City</label> -->
+            <input type="text" class="form-control myForm" id="formGroupExampleInput" placeholder="Search Your City">
+            <button type="submit" class="mybtn"><img src="./magnifying-glass-solid.svg" alt=""></button>
             </form>
           </div>
     </section>
