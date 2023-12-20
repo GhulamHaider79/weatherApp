@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Checking App</title>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./bootstrap.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./bootstrap.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <section class="my-nav">
-        <nav>
-          <h5><a class="navbar-brand" href="#">Weather Pro </a></h5>
-          <ul>
-            <li>
-              <button type="button" class="btn btn-secondary">Subscribe</button>
-            </li>
-          </ul>
-        </nav>
+      <nav>
+        <h5><a class="navbar-brand" href="#">Weather Pro </a></h5>
+        <ul>
+          <li>
+            <button type="button" class="btn btn-secondary">Subscribe</button>
+          </li>
+        </ul>
+      </nav>
     </section>
 
-    <section class="inputformSection d-flex  justify-content-center container ">
-        <div class="mb-3">
-            <form onsubmit="weatherChecking(); return false" class="formInput">
-            <!--<label for="formGroupExampleInput" class="form-label myFormLabel">Search Your City</label> -->
-            <input type="text" class="form-control myForm" id="formGroupExampleInput" placeholder="Search Your City">
-            <button type="submit" class="mybtn"><img src="./magnifying-glass-solid.svg" alt=""></button>
-            </form>
-          </div>
+    <section class="inputformSection d-flex justify-content-center container">
+      <div class="mb-3">
+        <form onsubmit="weatherChecking(); return false" class="formInput">
+          <!--<label for="formGroupExampleInput" class="form-label myFormLabel">Search Your City</label> -->
+          <input
+            type="text"
+            class="form-control myForm"
+            id="formGroupExampleInput"
+            placeholder="Search Your City"
+          />
+          <button type="submit" class="mybtn">
+            <img src="./magnifying-glass-solid.svg" alt="" />
+          </button>
+        </form>
+      </div>
     </section>
 
-    <section class="vh-100" style="background-color: #cbdced;">
-        <div class="container py-4 h-100">
-
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-md-10 col-lg-8 col-xl-6">
-      
-              <div class="card bg-dark text-white" style="border-radius: 40px;">
-                <div class="bg-image" style="border-radius: 35px;">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp"
-                    class="card-img" alt="weather" />
-                  <div class="mask" style="background-color: rgba(190, 216, 232, .5);"></div>
-                </div>
-                
-                <div class="card-img-overlay text-dark p-5  .flex-column containerMy">
-                  <h4 class="mb-0" id="cityAndMonth">City</h4>
-                  <p class="display-2 my-3" id="temperatur">Temperature</p>
-                  <p class="mb-2" id="min_tem">Min Tem</p>
-                  <p class="mb-2" id="max_tem">Max Tem</p>
-                  <h5 id="weatherSetuation">Weather</h5>
-                </div>
+    <section class="vh-100" style="background-color: #cbdced">
+      <div class="container py-4 h-100  my-weather-div">
+        <div
+          class="row d-flex justify-content-center align-items-center h-100 "
+        >
+          <div class="col-md-10 col-lg-8 col-xl-6">
+            <div class="card bg-dark text-white" style="border-radius: 40px">
+              <div class="bg-image" style="border-radius: 35px">
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/draw1.webp"
+                  class="card-img"
+                  alt="weather"
+                />
+                <div
+                  class="mask"
+                  style="background-color: rgba(190, 216, 232, 0.5)"
+                ></div>
               </div>
-      
+
+              <div
+                class="card-img-overlay text-dark p-5 .flex-column containerMy"
+              >
+                <h4 class="mb-0" id="cityAndMonth">City</h4>
+                <p class="display-2 my-3" id="temperatur">Temperature</p>
+                <p class="mb-2" id="min_tem">Min Tem</p>
+                <p class="mb-2" id="max_tem">Max Tem</p>
+                <h5 id="weatherSetuation">Weather</h5>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-      <div id="result"></div>
+      </div>
+    </section>
+    <div id="result"></div>
 
-
-      <script src="app.js"></script>
-    
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
